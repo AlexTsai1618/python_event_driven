@@ -1,2 +1,2 @@
-./admin/.dbdata/*
-./main/.dbdata/*
+admin/.dbdata/
+main/.dbdata/
