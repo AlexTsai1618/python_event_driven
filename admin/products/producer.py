@@ -1,4 +1,3 @@
-# amqps://cjcxavag:o2Qi8SS5BP1pdG37j4SCGFquF-7qRvNf@gerbil.rmq.cloudamqp.com/cjcxavag
 import pika
 import json
 
