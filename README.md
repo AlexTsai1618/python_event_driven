@@ -56,5 +56,64 @@ please change URLParamerter to your own url
 params = pika.URLParameters('Your CloudAMPQ url')
 ```
 
-### step 3.2 
+### step 3.2 Create product
+* go to post man application
+* Type http://localhost:8000/api/products
+* Select POST method
+* in the body section type json object
+<div style="width:100%">
 
+![postman](pic/stp1.png)
+
+</div>
+
+##### if the post is created will return the following message
+
+<div style="width:100%">
+
+![postman](pic/stp1_r.png)
+
+</div>
+
+##### list all the item
+
+* change the method to GET
+* Remove the body raw content
+* you will see all the item created before
+  
+<div style="width:100%">
+
+![postman](pic/stp1_r2.png)
+
+</div>
+
+### step 3.3 Update likes
+
+* change the url to http://localhost:8001/api/products/\<id>\/like
+  * enter the exsist id to your url (you can reference the id through previous steps)
+* change the method to POST
+  
+<div style="width:100%">
+
+![postman](pic/stp2.png)
+
+</div>
+
+##### if the post is created will return the following message
+
+<div style="width:100%">
+
+![postman](pic/stp2_r.png)
+
+</div>
+
+### step 3.4 check the Update likes
+
+* change method to GET
+* enter the url http://localhost:8000/api/products
+* You may findout that the django recieve the flask event and update the likes as well
+<div style="width:100%">
+
+![postman](pic/stp2_r2.png)
+
+</div>
